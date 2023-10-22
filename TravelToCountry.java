@@ -9,6 +9,7 @@ public class TravelToCountry{
     travelWithBus travelwithBus = new travelWithBus();
     travelWithPlane travelwithPlane = new travelWithPlane();
     travelWithTrain travelwithTrain = new travelWithTrain();
+    Card card = new Card();
     public void transportManage(String transport_type){
         switch (transport_type.toLowerCase()){
             case "bus":
@@ -19,6 +20,12 @@ public class TravelToCountry{
                 break;
             case "train":
                 travelwithTrain.transport();
+        }
+    }
+    public void transportPayment(String payment_choice){
+        switch (payment_choice.toLowerCase()){
+            case "card":
+                card.payment();
         }
     }
 }
