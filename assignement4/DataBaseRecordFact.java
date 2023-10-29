@@ -1,4 +1,4 @@
-public class DataBaseRecordFact {
+public class DataBaseRecordFactory {
     public static DatabaseRecord createRecord(String type, String data) {
         if ("Customer".equalsIgnoreCase(type)) {
             return new CustomerRecord(data);
